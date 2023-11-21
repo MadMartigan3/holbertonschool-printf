@@ -34,10 +34,22 @@ int print_str(va_list ap)
         return (0);
     }
 
-    for (len = 0; s[len] != '\0'; len++)
+    for (len = 0; str[len] != '\0'; len++)
     {
-        _putchar(s[len]);
+        _putchar(str[len]);
     }
     return (len);
 }
 
+/**
+ * print_percent - function that print %.
+ * @ap: va list
+ * 
+*/
+
+int print_percent(va_list ap)
+{
+    _putchar('%');
+
+    return (1);
+}
