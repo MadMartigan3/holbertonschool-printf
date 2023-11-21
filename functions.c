@@ -18,8 +18,26 @@ int print_char(va_list ap)
 }
 
 /**
- * print_char - function that display a character
+ * print_str - function that print a strings
  * @ap: va list
- * Return: 1
- */
-int print_it(va_list ap)
+ * Return: string characters
+*/
+
+int print_str(va_list ap)
+{
+    char *str;
+    int len;
+
+    str = va_arg(ap, char *);
+
+    if (str == NULL){
+        return (0);
+    }
+
+    for (len = 0; s[len] != '\0'; len++)
+    {
+        _putchar(s[len]);
+    }
+    return (len);
+}
+
