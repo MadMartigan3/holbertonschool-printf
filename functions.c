@@ -16,3 +16,10 @@ int print_char(va_list ap)
 
     return(1);
 }
+
+/**
+ * print_char - function that display a character
+ * @ap: va list
+ * Return: 1
+ */
+int print_it(va_list ap)
