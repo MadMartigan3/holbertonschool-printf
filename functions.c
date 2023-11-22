@@ -18,8 +18,38 @@ int print_char(va_list ap)
 }
 
 /**
- * print_char - function that display a character
+ * print_str - function that print a strings
  * @ap: va list
- * Return: 1
- */
-int print_it(va_list ap)
+ * Return: string characters
+*/
+
+int print_str(va_list ap)
+{
+    char *str;
+    int len;
+
+    str = va_arg(ap, char *);
+
+    if (str == NULL){
+        return (0);
+    }
+
+    for (len = 0; str[len] != '\0'; len++)
+    {
+        _putchar(str[len]);
+    }
+    return (len);
+}
+
+/**
+ * print_percent - function that print %.
+ * @ap: va list
+ * 
+*/
+
+int print_percent(va_list ap)
+{
+    _putchar('%');
+
+    return (1);
+}
