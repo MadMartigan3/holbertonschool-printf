@@ -49,7 +49,22 @@ int print_str(va_list ap)
 
 int print_percent(va_list ap)
 {
+    (void) ap;
     _putchar('%');
 
     return (1);
+}
+
+/**
+ * print_int - print an integer in base 10
+ * @ap: va  list
+ * Return: 1 success
+ */
+int print_int(va_list ap)
+{
+	int i; 
+	i = va_arg(ap, int);
+	_putchar(i);
+
+	return(1);
 }
