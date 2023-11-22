@@ -37,15 +37,16 @@ int print_int(va_list ap)
  * Return: 1 success
  */
 int print_decimal(va_list ap)
-	int i;
-	i = va_arg(ap, int)
 {
+	int i;
+	i = va_arg(ap, int);
+
 	i  = 0;
 
-	if (i <= 0; <= 100; i++)
+	for (i <= 0 || i <= 100 i++)
 	
-	else
-		(i >= 0;)
+		for (i >= 0;)
 			_putchar(i);
+	return(1)
 }
 
