@@ -1,0 +1,50 @@
+Man page : _printf
+
+NAME
+
+_printf
+
+SYNOPSIS
+
+#include "main.h"
+
+int _printf(const char *format, ...);
+
+DESCRIPTION 
+
+The _printf function prints a string on the screen.
+We can add different specifiers for be more precise on what we want.
+We created _printf from the real one command printf in language C.
+
+OPTION/SPECIFIERS 
+
+%c = Print one character.
+
+%s = Print a string.
+
+%d = Print a decimal number.
+
+%i = Print a integer.
+
+%% = Print the % character.
+
+EXAMPLES
+
+-_printf("Character:[%c]\n", 'H') = H.
+
+- _printf("String:[%s]\n", "I am a string !"); = I am a string.
+
+-_printf("Len:[%d]\n", len); = 39.
+
+-_printf("Length:[%d, %i]\n", len, len); = 39.
+
+-len = _printf("Percent:[%%]\n"); = %.
+
+BUGS 
+
+we didn't encounter any bugs when creating our own version of printf.
+
+AUTHOR
+
+SARHANI Malak
+MILAN Gabriel
