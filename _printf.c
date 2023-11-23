@@ -12,8 +12,8 @@ int _printf(const char *format, ...)
  function list[] = {
                 {'c', print_char},
                 {'s', print_str},
-               /** {'d', print_decimal},*/
-                {'i', print_int},
+                {'d', print_decimal},
+                {'i', print_decimal},
                 {'%', print_percent},
                 {'\0', NULL},
  };

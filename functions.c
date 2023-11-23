@@ -55,16 +55,33 @@ int print_percent(va_list ap)
     return (1);
 }
 
+int print_recursion_decimal(int n)
+{
+    int i = 1;
+    if (n / 10)
+    {
+        i += print_recursion_decimal(n / 10);
+    }
+    _putchar(n % 10 + '0');
+    return (i);
+}
+
 /**
- * print_int - print an integer in base 10
- * @ap: va  list
+ * print_decimal - print a decimal (base 10) number
+ * @ap: va list
  * Return: 1 success
  */
-int print_int(va_list ap)
+int print_decimal(va_list ap)
 {
-	int i; 
-	i = va_arg(ap, int);
-	_putchar(i);
-
-	return(1);
+        int i = 0, n = 0;
+        n = va_arg(ap, int);
+        if (n < 0)
+        {
+            _putchar ('-');
+            n = (-1)* n;
+            i++;
+        };
+        i += print_recursion_decimal(n);
+        return (i);
+        
 }
