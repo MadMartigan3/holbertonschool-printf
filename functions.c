@@ -36,17 +36,19 @@ int print_int(va_list ap)
  * @ap: va list
  * Return: 1 success
  */
-int print_decimal(va_list ap)
+int print_decimal( int n, int lastdigit)
 {
-	int i;
-	i = va_arg(ap, int);
+        int i = 0;
 
-	i  = 0;
-
-	for (i <= 0 || i <= 100 i++)
-	
-		for (i >= 0;)
-			_putchar(i);
-	return(1)
+        if (n < 0)
+{
+        _putchar ('-');
+        n = (-1)* n;
+};
+if (n /10)
+{
+        i = print_decimal(n / 10, lastdigit +1);
 }
-
+_putchar (n% 10 + '0');
+return (i);
+}
