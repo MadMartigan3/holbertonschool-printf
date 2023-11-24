@@ -30,7 +30,8 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # Flowchart
 
-![flowchart _printf](https://github.com/MadMartigan3/holbertonschool-printf/assets/105434715/12762314-ce62-4181-8731-c379f549d60d)
+
+![Diagramme sans nom drawio (1)](https://github.com/MadMartigan3/holbertonschool-printf/assets/147036703/42debfaf-2c81-4fc5-9c59-2531df68cfb8)
 
 
 # Authors
