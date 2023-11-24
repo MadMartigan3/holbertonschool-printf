@@ -1,4 +1,3 @@
-
 # PROJET PRINTF
 
 
@@ -28,6 +27,11 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 %i = Print a integer.
 
 %% = Print the % character.
+
+# Flowchart
+
+![flowchart _printf](https://github.com/MadMartigan3/holbertonschool-printf/assets/105434715/12762314-ce62-4181-8731-c379f549d60d)
+
 
 # Authors
 
