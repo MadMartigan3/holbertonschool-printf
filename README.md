@@ -35,8 +35,8 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # Authors
 
-SARHANI Malak
-MILAN Gabriel
+SARHANI Malak https://github.com/malak33s
+MILAN Gabriel https://github.com/MadMartigan3
 
 
 
